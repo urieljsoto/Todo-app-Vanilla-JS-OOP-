@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="container-full px-4 pt-[50px] bg-[#0e172a] flex justify-center h-screen">
+        <div class="w-[500px] flex flex-col gap-6 todo-wrapper text-white">
+            <h1 class="text-4xl font-mono">Todo App</h1>
+            <form action="" id="add-todo" class="container flex flex-col gap-4 mt-3">
+                <label for="todo" class="text-2xl">Add todo</label>
+                <div class="flex gap-3 h-10">
+                <input type="text" name="todo" class="w-[70%] border-b-2 rounded  border-primary text-white p-2 outline-none bg-[#1e293b]">
+                <button class="w-[30%] bg-primary rounded">Add new</button>
+                </div>
+            </form>
+            <div class="container flex flex-col gap-6 todo-container">
+                <div>
+                    <ul class="flex gap-3 flex-col todo-list">
+                    </ul>
+                </div>
+                <div class="pt-4 completed-container">
+                    <div class="flex w-full justify-between items-center">
+                        <h2 class="text-xl">Completed tasks</h2>
+                        <button class="bg-primary rounded-md p-2 clear-list">Clear list</button>
+                    </div>
+                    <ul class="flex gap-3 flex-col mt-7 done-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

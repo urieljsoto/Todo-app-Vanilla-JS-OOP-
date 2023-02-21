@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    background-color: transparent;
+}
+
+span{
+    cursor: pointer;
+}
+
+.completed-container li{
+    color: #7084a1;
+    border-color: #7084a1;
+}
+
